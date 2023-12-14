@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #87CEEB;
+    overflow: hidden;
+}
+
+.game-container {
+    position: relative;
+}
+
+.bird {
+    width: 50px;
+    height: 50px;
+    background-color: #008000; /* Green color for the bird */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease-out;
+}
+
+.score {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.pipe {
+    width: 80px;
+    height: 300px;
+    background-color: #A52A2A; /* Brown color for the pipes */
+    position: absolute;
+    bottom: 0;
+}
